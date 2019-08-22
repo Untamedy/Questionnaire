@@ -1,4 +1,4 @@
-package com.noname.questionnaire.entity;
+package com.questionnaire.entity;
 
 import java.util.Objects;
 

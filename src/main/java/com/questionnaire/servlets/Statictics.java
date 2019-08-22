@@ -1,7 +1,7 @@
-package com.noname.questionnaire.servlets;
+package com.questionnaire.servlets;
 
 
-import com.noname.questionnaire.model.Answers;
+import com.questionnaire.model.Answers;
 import java.io.IOException;
 import java.util.List;
 import javax.servlet.RequestDispatcher;
