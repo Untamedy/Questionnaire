@@ -1,0 +1,4 @@
+com\noname\questionnaire\servlets\Questions.class
+com\noname\questionnaire\model\Answers.class
+com\noname\questionnaire\entity\User.class
+com\noname\questionnaire\servlets\Statictics.class
