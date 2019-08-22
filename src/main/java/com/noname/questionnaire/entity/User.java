@@ -1,6 +1,5 @@
 package com.noname.questionnaire.entity;
 
-import java.util.Objects;
 
 /**
  *
@@ -63,54 +62,5 @@ public class User {
     public void setHappy(boolean happy) {
         this.happy = happy;
     }
-
-    @Override
-    public int hashCode() {
-        int hash = 3;
-        hash = 47 * hash + Objects.hashCode(this.name);
-        hash = 47 * hash + Objects.hashCode(this.lastname);
-        hash = 47 * hash + this.age;
-        hash = 47 * hash + Objects.hashCode(this.color);
-        hash = 47 * hash + (this.happy ? 1 : 0);
-        return hash;
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null) {
-            return false;
-        }
-        if (getClass() != obj.getClass()) {
-            return false;
-        }
-        final User other = (User) obj;
-        if (this.age != other.age) {
-            return false;
-        }
-        if (this.happy != other.happy) {
-            return false;
-        }
-        if (!Objects.equals(this.name, other.name)) {
-            return false;
-        }
-        if (!Objects.equals(this.lastname, other.lastname)) {
-            return false;
-        }
-        if (!Objects.equals(this.color, other.color)) {
-            return false;
-        }
-        return true;
-    }
-
-    @Override
-    public String toString() {
-        return "User{" + "name=" + name + ", lastname=" + lastname + ", age=" + age + ", color=" + color + ", happy=" + happy + '}';
-    }
-    
-    
-    
 
 }
